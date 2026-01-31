@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  margin: 30px 0;
+  padding: 30px 15px;
+}
+
+.container > .row {
+  width: 1000px;
+  margin: 0 calc(50% - 500px);
+  background-color: pink;
+}
+
+.container > .row-small {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(251, 255, 192);
+}
+
+@media (max-width: 1100px) {
+  .container > .row {
+    max-width: 800px;
+    width: 100%;
+    /* padding: 0 20px; */
+    margin: 0 auto;
+  }
+}
