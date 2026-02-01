@@ -6,13 +6,14 @@
 @import '../vendor/font-awesome.min.css';
 
 /* ---   components  ---*/
+@import '../components/clock.css';
 
 /* ---   custom syles  ---*/
 .hero-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.25rem;
+  gap: 3rem;
   text-align: center;
 }
 
