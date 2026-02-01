@@ -3,6 +3,7 @@
 @import './../base/layout.css';
 
 /* ---   3rd party  ---*/
+@import '../vendor/font-awesome.min.css';
 
 /* ---   components  ---*/
 
@@ -11,15 +12,141 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
   text-align: center;
 }
 
 .hero-title {
-  font-size: 80px;
+  font-size: 5rem;
 }
 
 .hero-descr {
   color: gray;
-  font-size: 22px;
+  font-size: 1.4rem;
+}
+
+/* main content */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.content-about {
+  width: 52%;
+}
+
+.content-ask {
+  width: 44%;
+}
+
+.subtitle {
+  margin-bottom: 1.13rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+.main-descr {
+  color: gray;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.main-descr a {
+  color: #e73669;
+  text-decoration: none;
+}
+
+/* footer */
+footer.container {
+  padding-top: 0;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+.socials {
+  padding: 1.25rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.13rem;
+  border-bottom: 2px solid #fff3;
+}
+
+.socials a {
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0.31rem;
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    font-size: 1.25rem;
+    color: #e73669;
+  }
+}
+
+.footer-logo {
+  margin: 1.4rem 0;
+  height: 2.4rem;
+}
+
+footer p {
+  /* font-size: 1.2rem; */
+  color: #fff6;
+  line-height: 1.6rem;
+
+  a {
+    color: white;
+    font-weight: 500;
+    text-transform: none;
+  }
+}
+
+.footer-copyrights {
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+
+  p {
+    position: relative;
+  }
+
+  p + p::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 1rem;
+    left: -0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff6;
+  }
+}
+
+/* -----------  MEDIA   ----------------- */
+/* 750px */
+@media (max-width: 46.88rem) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-about,
+  .content-ask {
+    max-width: 37.5rem;
+    width: 100%;
+  }
+}
+
+/* 600px */
+@media (max-width: 37.5rem) {
+  .footer-copyrights {
+    display: block;
+
+    p + p::before {
+      display: none;
+    }
+  }
 }
