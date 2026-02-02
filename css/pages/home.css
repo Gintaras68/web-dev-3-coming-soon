@@ -8,6 +8,7 @@
 /* ---   components  ---*/
 @import '../components/clock.css';
 @import '../components/progress-bar.css';
+@import '../components/mouse.css';
 
 /* ---   custom syles  ---*/
 .hero-content {

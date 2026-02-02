@@ -1,14 +1,15 @@
 .clock {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
+  max-width: 32rem;
+  width: 100%;
   color: white;
 }
 
 .clock .time {
   text-align: center;
-  /* flex: 1; */
+  flex: 1;
 }
 
 .clock .value {
@@ -18,19 +19,17 @@
 }
 
 .clock .label {
-  font-size: 2rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
 }
 
 @media (max-width: 43rem) {
   .clock {
-    max-width: 18.75rem;
+    max-width: 17rem;
   }
 }
 
 @media (max-width: 25rem) {
-  .clock {
-    gap: 2rem;
-  }
   .clock .value {
     font-size: 3.4rem;
   }
