@@ -8,8 +8,19 @@
 /* ---   components  ---*/
 @import '../components/clock.css';
 @import '../components/progress-bar.css';
+@import '../components/mouse.css';
 
 /* ---   custom syles  ---*/
+
+.hero {
+  min-height: 100vh;
+  padding-top: 6rem;
+  background-image: url('../../img/hero-bg.jpg');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 .hero-content {
   display: flex;
   flex-direction: column;
@@ -18,8 +29,15 @@
   text-align: center;
 }
 
+.hero .logo {
+  height: 3rem;
+}
+
 .hero-title {
+  margin-bottom: 1rem;
   font-size: 5rem;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .hero-descr {
