@@ -7,6 +7,7 @@
 
 /* ---   components  ---*/
 @import '../components/clock.css';
+@import '../components/progress-bar.css';
 
 /* ---   custom syles  ---*/
 .hero-content {
@@ -48,6 +49,7 @@
 }
 
 .main-descr {
+  margin-bottom: 2rem;
   color: gray;
   font-size: 1rem;
   line-height: 1.4;
