@@ -47,6 +47,27 @@
   font-size: 1.4rem;
 }
 
+.hero-form {
+  width: 100%;
+}
+
+.hero-form input {
+  width: 100%;
+  color: white;
+  border-bottom: 0.15rem solid #e8e8e8c2;
+  &::placeholder {
+    color: #fff8;
+  }
+}
+
+.hero-form button {
+  margin: auto;
+}
+
+.hero-content .mouse {
+  margin-top: -1.2rem;
+}
+
 /* main content */
 .main-content {
   display: flex;
