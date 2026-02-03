@@ -9,6 +9,8 @@
 @import '../components/clock.css';
 @import '../components/progress-bar.css';
 @import '../components/mouse.css';
+@import '../components/form.css';
+@import '../components/button.css';
 
 /* ---   custom syles  ---*/
 
@@ -49,7 +51,6 @@
 .main-content {
   display: flex;
   justify-content: space-between;
-  gap: 1.25rem;
 }
 
 .content-about {
@@ -74,7 +75,7 @@
 }
 
 .main-descr a {
-  color: #e73669;
+  color: var(--color-accent);
   text-decoration: none;
 }
 
@@ -87,6 +88,7 @@ footer.container {
 .socials {
   padding: 1.25rem 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1.13rem;
   border-bottom: 2px solid #fff3;
@@ -104,7 +106,7 @@ footer.container {
 
   &:hover {
     font-size: 1.25rem;
-    color: #e73669;
+    color: var(--color-accent);
   }
 }
 
@@ -117,57 +119,60 @@ footer p {
   /* font-size: 1.2rem; */
   color: #fff6;
   line-height: 1.6rem;
+}
 
-  a {
-    color: white;
-    font-weight: 500;
-    text-transform: none;
-  }
+footer a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .footer-copyrights {
   display: flex;
   justify-content: center;
   gap: 1.6rem;
-
-  p {
-    position: relative;
-  }
-
-  p + p::before {
-    position: absolute;
-    content: '';
-    width: 2px;
-    height: 1rem;
-    left: -0.8rem;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #fff6;
-  }
 }
 
+.footer-copyrights p {
+  position: relative;
+}
+
+.footer-copyrights p + p::before {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 1rem;
+  left: -0.8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff6;
+}
 /* -----------  MEDIA   ----------------- */
 /* 750px */
 @media (max-width: 46.88rem) {
   .main-content {
     flex-direction: column;
     align-items: center;
+    gap: 3rem;
   }
 
   .content-about,
   .content-ask {
-    max-width: 37.5rem;
+    max-width: 38rem;
     width: 100%;
   }
 }
 
 /* 600px */
-@media (max-width: 37.5rem) {
+@media (max-width: 38rem) {
+  .hero-title {
+    font-size: 4rem;
+  }
+
   .footer-copyrights {
     display: block;
-
-    p + p::before {
-      display: none;
-    }
+  }
+  .footer-copyrights p + p::before {
+    display: none;
   }
 }
