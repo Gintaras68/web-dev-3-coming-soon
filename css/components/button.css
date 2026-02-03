@@ -1,14 +1,27 @@
 .btn {
   display: inline-block;
+  font-family: inherit;
   font-size: 1rem;
+  text-align: center;
   line-height: 1;
-  padding: 0.6rem 1rem;
+  padding: 0.6em 1em;
   color: white;
   background-color: var(--color-accent);
-  border: 0.2rem solid var(--color-accent);
-  border-radius: 0.2rem;
+  border: 0.2em solid var(--color-accent);
+  border-radius: 0.2em;
   cursor: pointer;
+  user-select: none;
   transition: all 0.2s ease-in-out;
+}
+
+.btn.btn-round {
+  border-radius: 2.2em;
+}
+
+.btn.btn-circle {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
 }
 
 .btn:hover {
