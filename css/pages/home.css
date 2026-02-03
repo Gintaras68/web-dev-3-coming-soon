@@ -88,6 +88,7 @@ footer.container {
 .socials {
   padding: 1.25rem 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 1.13rem;
   border-bottom: 2px solid #fff3;
@@ -165,6 +166,9 @@ footer p {
 
 /* 600px */
 @media (max-width: 38rem) {
+  .hero-title {
+    font-size: 4rem;
+  }
   .footer-copyrights {
     display: block;
 
