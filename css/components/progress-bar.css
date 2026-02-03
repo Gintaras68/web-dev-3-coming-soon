@@ -4,9 +4,6 @@
   gap: 2rem;
 }
 
-.progress-bar {
-}
-
 .bar-info {
   display: flex;
   justify-content: space-between;
@@ -15,16 +12,10 @@
   text-transform: uppercase;
 }
 
-.bar-label {
-}
-
-.bar-value {
-}
-
 .bar-bottom {
   width: 100%;
   height: 0.3rem;
-  background-color: gray;
+  background-color: rgb(177, 177, 177);
 }
 
 .bar-progress {
@@ -38,7 +29,7 @@
   content: '';
   width: 100%;
   height: 100%;
-  background-color: #52aaeb;
+  background-color: var(--color-main);
   animation: loading 4s;
   animation-timing-function:;
 }

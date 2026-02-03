@@ -1,3 +1,8 @@
+:root {
+  --color-main: #3ca9f0;
+  --color-accent: #e73669;
+}
+
 @font-face {
   font-family: 'Roboto';
   src: url('../../fonts/Roboto-Regular.ttf');
@@ -26,6 +31,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body,
 body * {
   box-sizing: border-box;
@@ -39,9 +48,13 @@ body {
 }
 
 .bg-main {
-  background-color: #3ca9f0;
+  background-color: var(--color-main);
 }
 
 .bg-second {
-  background-color: #e73669;
+  background-color: var(--color-accent);
+}
+
+.none {
+  display: none;
 }
