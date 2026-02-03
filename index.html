@@ -23,14 +23,39 @@
     <!-- <link rel="stylesheet" href="./css/font-awesome.min.css" /> -->
   </head>
   <body>
-    <section class="container bg-main">
+    <section class="container bg-main hero">
       <div class="row-small hero-content">
         <img src="./img/logo.png" alt="Logo" class="logo" />
-        <h1 class="hero-title">Coming soon</h1>
-        <p class="hero-descr">
-          An awesome new company for web resources is coming very soon. Enter
-          your email to request an early invitation!
-        </p>
+        <div>
+          <h1 class="hero-title">Coming soon</h1>
+          <p class="hero-descr">
+            An awesome new company for web resources is coming very soon. Enter
+            your email to request an early invitation!
+          </p>
+        </div>
+
+        <div class="clock">
+          <div class="time">
+            <div class="value">432</div>
+            <div class="label">days</div>
+          </div>
+          <div class="time">
+            <div class="value">09</div>
+            <div class="label">hours</div>
+          </div>
+          <div class="time">
+            <div class="value">37</div>
+            <div class="label">minutes</div>
+          </div>
+          <div class="time">
+            <div class="value">39</div>
+            <div class="label">seconds</div>
+          </div>
+        </div>
+
+        <div class="mouse">
+          <div class="mouse-whell"></div>
+        </div>
       </div>
     </section>
 
@@ -43,6 +68,35 @@
             content and background variants. <a href="#">Matrox</a> is comming
             very soon. We are nearly there..
           </p>
+          <div class="progress-bars">
+            <div class="progress-bar">
+              <div class="bar-info">
+                <span class="bar-label">UX Design</span>
+                <span class="bar-value">90%</span>
+              </div>
+              <div class="bar-bottom">
+                <div class="bar-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <div class="bar-info">
+                <span class="bar-label">Web Design</span>
+                <span class="bar-value">76%</span>
+              </div>
+              <div class="bar-bottom">
+                <div class="bar-progress" style="width: 76%"></div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <div class="bar-info">
+                <span class="bar-label">Web Development</span>
+                <span class="bar-value">85%</span>
+              </div>
+              <div class="bar-bottom">
+                <div class="bar-progress" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="content-ask">
@@ -52,7 +106,32 @@
             <a href="mailto:">trendytheme@gmail.com</a>. Contact form is fully
             working and very easy to customize.
           </p>
-          <form action="#"></form>
+          <form action="#" class="form">
+            <label for="name" Name></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
         </div>
       </div>
     </section>
