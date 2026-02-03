@@ -1,0 +1,52 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 1.6rem;
+}
+
+.form label {
+  display: none;
+}
+
+.form input,
+.form textarea {
+  padding: 0.5rem;
+  padding-left: 0;
+  border: none;
+  border-bottom: 0.15rem solid rgb(180, 180, 180);
+
+  &:focus-visible {
+    outline: 0.15rem solid #ddd;
+    border-bottom-color: gray;
+  }
+
+  &:hover {
+    border-bottom-color: gray;
+  }
+}
+
+.form input {
+  width: 47%;
+}
+
+.form textarea {
+  width: 100%;
+  min-height: 4.8rem;
+  height: 4.8rem;
+  max-height: 16rem;
+  resize: vertical;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.form button {
+  margin-top: 1rem;
+  margin-left: auto;
+}
+
+@media (max-width: 38rem) {
+  .form input {
+    width: 100%;
+  }
+}
